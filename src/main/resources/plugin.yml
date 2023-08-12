@@ -1,0 +1,20 @@
+name: ${project.name}
+version: ${project.version}
+main: com.i0dev.events.EventsPlugin
+website: ${project.url}
+authors: [ i01 ]
+depend: [ MassiveCore ]
+softdepend: [ PlaceholderAPI ]
+description: ${project.description}
+api-version: 1.20
+permissions:
+  events.basecommand: { description: events basecommand, default: false }
+  events.version: { description: check version, default: false }
+  events.start: { description: start event, default: false }
+  events.join: { description: join event, default: false }
+
+  events.*:
+    events.basecommand: true
+    events.version: true
+    events.start: true
+    events.join: true
